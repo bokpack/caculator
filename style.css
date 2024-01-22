@@ -1,4 +1,14 @@
-h1 {
-    background-color: salmon;
-    background-size: 80px;
+
+tr.header th {
+    border: 4px solid red;
+    background-color: cadetblue;
+    height: 30px;
+    width: 120px;
+}
+
+
+tr.bottom td {
+    border: 4px solid blue;
+    background-color: green;
+    height: 200px;
 }
