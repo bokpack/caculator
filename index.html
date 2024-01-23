@@ -11,21 +11,49 @@
     <table>
         <tr class="header">
             <th scope="col">총액</th>
-            <th scope="col">안주</th>
+            <th scope="col">안주 총액</th>
             <th scope="col">술값</th>
             <th scope="col">인원수</th>
         </tr>
+        <tr>
+        </tr>
         <tr class="bottom">
+            <!-- 총액 익렵 -->
             <td>  
-            <!-- 총액 :  <input type="number" name="sum" size=4 maxlength=8> -->
+            <input type="number" name="sum" class="sum_box">
             <button type="submit" id="sum_bt">입력</button>
             </td>
+            <!-- 안주 입력 -->
+            <td>ㄴ
+                <p>안주 총합 : </p>
+            </td>
+            <!-- 술값 입력 -->
             <td></td>
-            <td></td>
-            <td>dsf</td>
+            <!-- 인원수 입력 -->
+            <td>
+                <p>술먹 : 
+                    <input class="people" type="number">
+                </p>
+                <p>
+                    술안먹 : 
+                    <input class="people" type="number">
+                </p>
+            </td>
         </tr>
         <tr></tr>
     </table>
-
+    <table>
+        <tr class="sum_table">
+            <td>합계 : 250.000</td>
+            <td>안주 합계 : 130.000</td>
+            <td>술 합계 : 120.000</td>
+            <td>
+                <p>1인당</p>
+                <p> 술 먹 : 777.777</p>
+                <p> 술 안먹 : 777.777</p>
+            </td>
+        </tr>
+    </table>
+    <button> 영수증 보기</button>
 </body>
 </html>
