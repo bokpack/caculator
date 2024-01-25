@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 2px solid green;
+    width: 260px;
+    height: 160px;
+    text-align: center;
+}
+
+th.title {
+    width: 60px;
+}
+
+p{
+    display: inline-block;
+    margin: 0;
+}
+
+input{
+    display: inline-block;
+}
