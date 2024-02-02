@@ -33,3 +33,11 @@ input.people {
     width: 60px;
 }
 
+td.alcohol {
+    background-color: r;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
