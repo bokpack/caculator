@@ -12,7 +12,7 @@
         <tr>
             <th class="title">총액</th>
             <td>
-                <input type="number" id="sumInput"
+                <input type="number" id="sum"
                 placeholder="총액을 입력해주세요">
                 <button onclick="sum()">입력</button>
             </td>
@@ -31,20 +31,29 @@
         <tr>
             <th class="title">술값</th>
             <td id="alcohol">
-                <p>이름</p>
-                <p>개수</p>
-                <p>가격</p>
+                <div>이름
+                    <input type="text" placeholder="술 이름">
+                </div>
+                <div>개수
+                    <input type="number" placeholder="몇 병" id="bottle">
+                </div>
+                <div>가격
+                    <input type="number" placeholder="1병 당 가격" id="bottlePrice">
+                </div>
+                <button onclick="alcoholSum()">계산</button>
             </td>
-            <td><p>술값 합계 : 120.000</p></td>
+            <td><p id="resultAlcoholSum">술값 합계 : </p></td>
         </tr>
         <tr>
             <th class="title">인원수</th>
             <td>
                 
-                <p>술 먹 :</p>
-                <input type="number" placeholder="술먹 입력">
-                <p>안 먹 :</p>
-                <input type="number" placeholder="안먹 입력">
+                <div>술 먹 :
+                    <input type="number" placeholder="술먹 입력">
+                </div>
+                <div>안 먹 :
+                    <input type="number" placeholder="안먹 입력">
+                </div>
             </td>
             <td>fds</td>
         </tr>

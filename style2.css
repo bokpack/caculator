@@ -1,3 +1,7 @@
+*{
+    padding: 1px;
+}
+
 table{
     border-collapse: collapse;
 }
@@ -21,3 +25,10 @@ p{
 input{
     display: inline-block;
 }
+
+#alcohol {
+    background-color: salmon;
+    
+    
+}
+
