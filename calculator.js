@@ -1,4 +1,5 @@
 console.log('Hello World!');
+
 function sum() {
     const inputSum = document.getElementById('sum').value;
     // const inputValue = inputElement.value;
@@ -29,8 +30,38 @@ function alcoholSum() {
 
     const inputSnackSum = document.getElementById('snackSum')
     inputSnackSum.innerHTML = `안주 합계 : ${inputSnack}`
-    
-
-    
 
 }
+
+
+
+function nonPeople() {
+    const inputNon = document.getElementById('nonAlcoholPeople').value
+    const inputSnack = document.getElementById('snackSum').value
+
+    const inputNonPeople = inputNon/inputSnack
+
+    console.log(inputNonPeople)
+
+    // const inputNonResult = document.getElementById('resultNon')
+    // inputNonResult.innerHTML = `술 안먹 : ${inputNonPeople}`
+    
+}
+
+// function alcoholPeople() {
+//     const snackPrice = document.getElementById('snackSum').value
+//     const alcoholPrice = document.getElementById('resultAlcoholSum').value
+//     const PeopleOk = document.getElementById('okPeople').value
+//     const PeopleNo = document.getElementById('nonPeopel').value
+    
+
+
+//     const inputAlcoholPeople = (snackPrice+alcoholPrice)/PeopleOk
+//     const inputNonAlcoholPeople = snackPrice/PeopleNo
+
+//     console.log(inputAlcoholPeople)
+
+//     const test = document.getElementById('okPeople')
+//     test.innerHTML=`dks:${inputAlcoholPeople}`
+
+// }

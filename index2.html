@@ -47,15 +47,19 @@
         <tr>
             <th class="title">인원수</th>
             <td>
-                
-                <div>술 먹 :
-                    <input type="number" placeholder="술먹 입력">
+                <div>술 안먹 :
+                    <input placeholder="술 안먹 입력" id="nonAlcoholPeople">
+                    <button onclick="nonPeople()">계산</button>
                 </div>
-                <div>안 먹 :
-                    <input type="number" placeholder="안먹 입력">
+                <div>술 먹 :
+                    <input type="number" placeholder="술 먹 입력" id="AlcoholPeople">
+                    <button onclick="">계산</button>
                 </div>
             </td>
-            <td>fds</td>
+            <td>
+                <div id="resultNon" >술 안먹: </div>
+                <div>술 먹: </div>
+            </td>
         </tr>
     </table>
 
