@@ -9,6 +9,7 @@ function sum() {
     inputAllSum.innerHTML = ` 합계 : ${inputSum}`
 }
 
+
 function alcoholSum() {
     // 술 개수랑 가격 곱하기
     const inputBottle = document.getElementById('bottle').value
@@ -28,25 +29,67 @@ function alcoholSum() {
     const inputSnack =  inputSum - inputAlcohol
     console.log(inputSnack)
 
-    const inputSnackSum = document.getElementById('snackSum')
+    const inputSnackSum = document.getElementById('snackSum') 
     inputSnackSum.innerHTML = `안주 합계 : ${inputSnack}`
+
+
+    
 
 }
 
+// 지피티
+// function nonPeople() {
+//     const inputNon = parseInt(document.getElementById('nonAlcoholPeople').value);
+//     const inputSnackSum = parseInt(document.getElementById('snackSum').textContent); // 변경된 부분
+
+//     console.log("inputNon", inputNon);
+//     console.log("inputSnackSum", inputSnackSum);
+
+//     if (!isNaN(inputNon) && !isNaN(inputSnackSum)) { // 추가된 부분
+//         const inputNonPeople = (inputSnackSum / inputNon);
+//         console.log(typeof(inputNonPeople));
+//     } else {
+//         console.log("숫자로 변환할 수 없는 값이 있습니다.");
+//     }
+// }
 
 
+
+
+//내가 짠 코드
 function nonPeople() {
-    const inputNon = document.getElementById('nonAlcoholPeople').value
-    const inputSnack = document.getElementById('snackSum').value
+    const inputNon = parseInt(document.getElementById('nonAlcoholPeople').value);
+    const inputSnackSum = parseInt(document.getElementById('snackSum').innerHTML)
 
-    const inputNonPeople = inputNon/inputSnack
 
-    console.log(inputNonPeople)
+    //const inputSnackSum = parseInt(document.getElementById('snackSum').value); nan
+    //const inputSnackSum = parseInt(document.getElementById('snackSum')); nan
+    //const inputSnackSum = document.getElementById('snackSum'); 내가 적어둔 p태그 그대로 뜸 
+    //const inputSnackSum = document.getElementById('snackSum').value; undefined
+
+    //const inputSnackSum = parseInt(document.getElementById('snackSum').value)
+    //console.log(document.getElementById('snackSum').innerHTML)
+    //console.log(document.getElementById('snackSum').textContent) 
+    
+    console.log(inputNon)
+    console.log(inputSnackSum)
+
+
+
+   // const inputNonPeople = (inputSnackSum/inputNon)ㄴ
+
+  //  console.log("inputNonPeople",inputNonPeople)
+    
+
+
 
     // const inputNonResult = document.getElementById('resultNon')
     // inputNonResult.innerHTML = `술 안먹 : ${inputNonPeople}`
     
 }
+
+
+
 
 // function alcoholPeople() {
 //     const snackPrice = document.getElementById('snackSum').value
