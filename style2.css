@@ -9,7 +9,7 @@ table{
 th,td{
     border: 2px solid green;
     width: 260px;
-    height: 160px;
+    height: 130px;
     text-align: center;
 }
 
@@ -25,10 +25,3 @@ p{
 input{
     display: inline-block;
 }
-
-#alcohol {
-    background-color: salmon;
-    
-    
-}
-

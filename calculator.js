@@ -27,10 +27,14 @@ function alcoholSum() {
     const inputSum = document.getElementById('sum').value
 
     const inputSnack =  inputSum - inputAlcohol
-    console.log(inputSnack)
+    console.log("어ㅏㅜㄴ아ㅓ로",inputSnack)
 
     const inputSnackSum = document.getElementById('snackSum') 
-    inputSnackSum.innerHTML = `안주 합계 : ${inputSnack}`
+    
+    inputSnackSum.innerText = `안주 합계 : ${inputSnack}`
+
+    // 술 안먹 구하기
+
 
 
     
