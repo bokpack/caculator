@@ -27,43 +27,39 @@ function alcoholSum() {
     const inputSum = document.getElementById('sum').value
 
     const inputSnack =  inputSum - inputAlcohol
-    console.log("어ㅏㅜㄴ아ㅓ로",inputSnack)
+    console.log("안주 합계",inputSnack)
 
-    const inputSnackSum = document.getElementById('snackSum') 
+    const inputSnackSum = document.getElementById('snackSum')
     
-    inputSnackSum.innerText = `안주 합계 : ${inputSnack}`
+    // NaN
+    //const inputSnackSum = parseInt(document.getElementById('snackSum').innerHTML);
+    
+    inputSnackSum.innerText = `${inputSnack}`
+    console.log("얘 뭐지",inputSnackSum)
 
     // 술 안먹 구하기
-
 
 
     
 
 }
 
-// 지피티
-// function nonPeople() {
-//     const inputNon = parseInt(document.getElementById('nonAlcoholPeople').value);
-//     const inputSnackSum = parseInt(document.getElementById('snackSum').textContent); // 변경된 부분
-
-//     console.log("inputNon", inputNon);
-//     console.log("inputSnackSum", inputSnackSum);
-
-//     if (!isNaN(inputNon) && !isNaN(inputSnackSum)) { // 추가된 부분
-//         const inputNonPeople = (inputSnackSum / inputNon);
-//         console.log(typeof(inputNonPeople));
-//     } else {
-//         console.log("숫자로 변환할 수 없는 값이 있습니다.");
-//     }
-// }
 
 
 
-
-//내가 짠 코드
 function nonPeople() {
     const inputNon = parseInt(document.getElementById('nonAlcoholPeople').value);
-    const inputSnackSum = parseInt(document.getElementById('snackSum').innerHTML)
+    const inputSnackSum = parseInt(document.getElementById('snackSum').innerHTML);
+
+    console.log(inputNon)
+    console.log("얘뭐지2",inputSnackSum)
+
+    const nonPeopleMoney = inputSnackSum/inputNon
+    console.log("술안먹돈",nonPeopleMoney)
+
+
+    const inputNonPeople = document.getElementById('resultNon')
+    inputNonPeople.innerHTML = ` 합계 : ${nonPeopleMoney}`
 
 
     //const inputSnackSum = parseInt(document.getElementById('snackSum').value); nan
@@ -75,8 +71,7 @@ function nonPeople() {
     //console.log(document.getElementById('snackSum').innerHTML)
     //console.log(document.getElementById('snackSum').textContent) 
     
-    console.log(inputNon)
-    console.log(inputSnackSum)
+
 
 
 
@@ -94,21 +89,3 @@ function nonPeople() {
 
 
 
-
-// function alcoholPeople() {
-//     const snackPrice = document.getElementById('snackSum').value
-//     const alcoholPrice = document.getElementById('resultAlcoholSum').value
-//     const PeopleOk = document.getElementById('okPeople').value
-//     const PeopleNo = document.getElementById('nonPeopel').value
-    
-
-
-//     const inputAlcoholPeople = (snackPrice+alcoholPrice)/PeopleOk
-//     const inputNonAlcoholPeople = snackPrice/PeopleNo
-
-//     console.log(inputAlcoholPeople)
-
-//     const test = document.getElementById('okPeople')
-//     test.innerHTML=`dks:${inputAlcoholPeople}`
-
-// }
